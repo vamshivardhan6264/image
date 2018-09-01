@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>responsive image</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <style media="screen">
+        h1{
+          text-align: center;
+          color: #009900;
+        }
+        .main{
+          display: flex;
+          margin: yellow;
+          justify-content: center;
+        }
+        img{
+          max-width: 100%;
+        }
+      </style>
+  </head>
+  <body>
+<h1>Responsive image</h1>
+<picture class="main">
+   <source media="(min-width:769px)" srcset="kitten-large.png" >
+     <source media="(min-width:480px)" srcset="kitten-medium.png">
+        <img src="kitten-small.png" alt="kitten cat">
+
+</picture>
+  </body>
+</html>
